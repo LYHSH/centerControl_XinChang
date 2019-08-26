@@ -1,0 +1,14 @@
+<btn>
+    <x>669.000000000</x>
+    <y>478.000000000</y>
+    <type>0</type>
+    <name>确 认</name>
+    <wordTex>btnImgs/ok.png</wordTex>
+</btn>
+<btn>
+    <x>1116.000000000</x>
+    <y>478.000000000</y>
+    <type>1</type>
+    <name>取 消</name>
+    <wordTex>btnImgs/cancel.png</wordTex>
+</btn>

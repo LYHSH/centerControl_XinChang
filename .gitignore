@@ -1,0 +1,8 @@
+centerControl/centerControl.vcxproj.user
+centerControl/icon.rc
+centerControl/.vs/
+*.exe
+*.exp
+*.lib
+centerControl/obj/
+PS/

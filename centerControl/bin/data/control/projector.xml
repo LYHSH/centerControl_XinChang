@@ -1,0 +1,47 @@
+<!-- type == 0,PJLink通用协议 -->
+<!-- type == 1,佳能投影机控制 -->
+<!-- type == 2,佳能投影机串口控制 -->
+<!-- type == 3, 佳能投影机控制2-->
+<!-- type == 8, 长沙爱普生-->
+<!-- type == 9, 长沙三洋-->
+<group>
+	<project>
+		<IP>192.168.1.121</IP>
+		<type>0</type>
+	</project>
+</group>
+
+<group>
+	<project>
+		<IP>192.168.1.122</IP>
+		<type>0</type>
+	</project>
+</group>
+
+<group>
+	<project>
+		<IP>192.168.1.123</IP>
+		<type>0</type>
+	</project>
+</group>
+
+<group>
+	<project>
+		<IP>192.168.1.124</IP>
+		<type>0</type>
+	</project>
+</group>
+
+<group>
+	<project>
+		<IP>192.168.1.125</IP>
+		<type>0</type>
+	</project>
+</group>
+
+<group>
+	<project>
+		<IP>192.168.1.120</IP>
+		<type>0</type>
+	</project>
+</group>

@@ -1,0 +1,127 @@
+<DATA_SENDER>
+	<SERIAL>
+		<COM>COM3</COM>
+		<N_BAUD>9600</N_BAUD>
+	</SERIAL>
+	<!-- <UDP>
+		<IP>127.0.0.1</IP>
+		<PORT>6000</PORT>
+	</UDP>
+	<TCP>
+		<IP>127.0.0.1</IP>
+		<PORT>6000</PORT>
+	</TCP> -->
+</DATA_SENDER>
+
+
+<!-- 101 -->
+<node>
+	<on>4A 01 03 01 01 0D</on>
+	<off>4A 01 03 01 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 102 -->
+<node>
+	<on>4A 01 03 02 01 0D</on>
+	<off>4A 01 03 02 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 103 -->
+<node>
+	<on>4A 01 03 03 01 0D</on>
+	<off>4A 01 03 03 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 104 -->
+<node>
+	<on>4A 01 03 04 01 0D</on>
+	<off>4A 01 03 04 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 105 -->
+<node>
+	<on>4A 01 03 05 01 0D</on>
+	<off>4A 01 03 05 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 106 -->
+<node>
+	<on>4A 01 03 06 01 0D</on>
+	<off>4A 01 03 06 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 107 -->
+<node>
+	<on>open 01 02</on>
+	<off>close 01 02</off>
+	<type>STR_CHAR</type>
+</node>
+
+<!-- 108 -->
+<node>
+	<on>open 01 03</on>
+	<off>close 01 03</off>
+	<type>STR_CHAR</type>
+</node>
+
+<!-- 109 -->
+<node>
+	<on>open 01 04</on>
+	<off>close 01 04</off>
+	<type>STR_CHAR</type>
+</node>
+
+<!-- 110 -->
+<node>
+	<on>open 01 05</on>
+	<off>close 01 05</off>
+	<type>STR_CHAR</type>
+</node>
+
+<!-- 111 -->
+<node>
+	<on>open 01 06</on>
+	<off>close 01 06</off>
+	<type>STR_CHAR</type>
+</node>
+
+<!-- 112 -->
+<node>
+	<on>open 01 01</on>
+	<off>close 01 01</off>
+	<type>STR_CHAR</type>
+</node>
+
+<!-- 113 -->
+<node>
+	<on>4A 01 03 05 01 0D</on>
+	<off>4A 01 03 05 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 114 -->
+<node>
+	<on>4A 01 03 06 01 0D</on>
+	<off>4A 01 03 06 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 115 -->
+<node>
+	<on>4A 01 03 07 01 0D</on>
+	<off>4A 01 03 07 02 0D</off>
+	<type>STR_HEX</type>
+</node>
+
+<!-- 116 -->
+<node>
+	<on>4A 01 03 08 01 0D</on>
+	<off>4A 01 03 08 02 0D</off>
+	<type>STR_HEX</type>
+</node>

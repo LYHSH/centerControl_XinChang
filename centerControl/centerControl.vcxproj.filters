@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxConstants\src\ofxMyConstants.cpp">
+      <Filter>addons\ofxConstants\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\cmdConverter.cpp">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\md5Converter.cpp">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\nullConverter.cpp">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\timeSynMd5Converter.cpp">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\button.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\buttonFactory.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\doubleStateButton.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\flipTexRectButton.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\rectButton.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texRectButton.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texTextRectButton.cpp">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSender.cpp">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderFacory.cpp">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderMgr.cpp">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxSerialDataSender.cpp">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxTcpDataSender.cpp">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxUdpDataSender.cpp">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyFramework\src\checkDigitCalculation.cpp">
+      <Filter>addons\ofxMyFramework\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofx8080LedScreen.cpp">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLEDmgr.cpp">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreen.cpp">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreenFactory.cpp">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLYDledScreen.cpp">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacMgr.cpp">
+      <Filter>addons\ofxMyMacControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacPowControl.cpp">
+      <Filter>addons\ofxMyMacControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon230PJcontrol.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJ2.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJcontrol.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannonComPJcontrol.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ1.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ2.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxDLPproject.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcomControl.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolBase.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolFactory.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxpjlinkPJcontrol.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPjMgr.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJnetControlBase.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxSonyNetProject.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxVivitekComProject.cpp">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx2000seriesRelays.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55LongtengRelays.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55seriesRelays.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxHengYang2Relay.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxLightingRelays.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRealRelayBase.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayComponent.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayEqualComponent.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayFactory.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayLoopMgr.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysBase.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysMgr.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayThreadDecoration.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxVirtualRelayBase.cpp">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxDMX512controler.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxHuangControler.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealRecorderBase.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealTimeDMXcontroler.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderBase.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderFactory.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderThread.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecordMgr.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\waveLightControl.cpp">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControl.cpp">
+      <Filter>addons\ofxMyVideoControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControlMgr.cpp">
+      <Filter>addons\ofxMyVideoControl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPClient.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPManager.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPServer.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxUDPManager.cpp">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\btnsShowPage.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\downFlipSwitcher.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\flipSwitcher.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPage.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPageV2.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxImagePageBack.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxNullPageBack.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageBack.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageSwitchMgr.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxVideoPageBack.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\orderHandler.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageBase.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageControler.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageSwitchBase.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\rightFlipSwitcher.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\secondTipPage.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\spreadSwitcher.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\staticMgr.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\upFlipSwitcher.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\wordButton.cpp">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.cpp">
+      <Filter>addons\ofxTrueTypeFontUC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
+      <Filter>addons\ofxXmlSettings\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controlClass.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controlHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofxHexCmdsMgr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UImanager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxConstants">
+      <UniqueIdentifier>{E3754598-CA85-8CB3-071C-AB1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxConstants\src">
+      <UniqueIdentifier>{1E6D5BC5-A69E-1B43-E70D-744D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMD5Convert">
+      <UniqueIdentifier>{0A4C8083-4F49-473E-FCB3-F7A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMD5Convert\src">
+      <UniqueIdentifier>{F4EE7640-D3D0-A71C-A9F1-294B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyButtons">
+      <UniqueIdentifier>{A310E259-D253-B5A7-FDD9-0133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyButtons\src">
+      <UniqueIdentifier>{9017C8ED-9C52-5735-808D-B38D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyDataSender">
+      <UniqueIdentifier>{F717C355-6611-7FA0-6B46-4F10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyDataSender\src">
+      <UniqueIdentifier>{E36B8253-5EE3-EFA6-F3E8-AFBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyFramework">
+      <UniqueIdentifier>{69585273-CB33-E671-1A45-42BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyFramework\src">
+      <UniqueIdentifier>{B0F0FA6D-2FA9-237C-8C54-41A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyLEDcontrol">
+      <UniqueIdentifier>{09FF95A4-E0F4-B85E-4708-215D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyLEDcontrol\src">
+      <UniqueIdentifier>{6DDDFB20-CF17-2516-EA0D-3772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyMacControl">
+      <UniqueIdentifier>{4C046A26-EE1E-5856-D58B-6B3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyMacControl\src">
+      <UniqueIdentifier>{3B7A32AF-4055-F2C1-249B-43EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyPJcontrol">
+      <UniqueIdentifier>{0EC4A012-D831-15EE-2FBB-D160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyPJcontrol\src">
+      <UniqueIdentifier>{A80EB521-CFB1-D8BB-9176-AF78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyRelay">
+      <UniqueIdentifier>{A4E13EC9-8A03-A4DB-C28D-66EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyRelay\src">
+      <UniqueIdentifier>{441CDEEC-02CE-70AB-018A-93AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyStageLightControl">
+      <UniqueIdentifier>{3DC04012-59B0-F1AF-2F2C-5D28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyStageLightControl\src">
+      <UniqueIdentifier>{15905A19-2444-AB06-A785-52DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyVideoControl">
+      <UniqueIdentifier>{AC75BBAC-96A6-3BA1-F944-B832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxMyVideoControl\src">
+      <UniqueIdentifier>{52A15F44-B2D3-CC51-149B-487D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNetwork">
+      <UniqueIdentifier>{01A15744-29A6-108D-08E9-83A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxNetwork\src">
+      <UniqueIdentifier>{3D1C10C7-8F35-E796-9C70-F5F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPublicCmd">
+      <UniqueIdentifier>{47A2A0E3-BDC4-8AC5-53C4-5095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPublicCmd\src">
+      <UniqueIdentifier>{DE4AE920-C1ED-3BF4-E33C-89CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSelfPage">
+      <UniqueIdentifier>{3B2EE880-B59D-C381-2052-40F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSelfPage\src">
+      <UniqueIdentifier>{4F4BBE26-CEE6-50E0-8E70-47C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSerial">
+      <UniqueIdentifier>{E1E4AE73-4A0A-7627-37ED-3253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxSerial\src">
+      <UniqueIdentifier>{A215C2B7-2A7F-4B7B-0D28-5393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTrueTypeFontUC">
+      <UniqueIdentifier>{5652952C-1675-EFF8-8E62-5D8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTrueTypeFontUC\src">
+      <UniqueIdentifier>{7E369600-03BF-EEFC-FA92-F38A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings">
+      <UniqueIdentifier>{877F005D-13E6-0592-1D97-F2E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings\src">
+      <UniqueIdentifier>{CCB2AC63-49D2-977C-CFE8-AEAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxXmlSettings\libs">
+      <UniqueIdentifier>{687714A8-1662-FA1C-261F-50F0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxConstants\src\ofxMyConstants.h">
+      <Filter>addons\ofxConstants\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\cmdConverter.h">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\md5.h">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\md5Converter.h">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\nullConverter.h">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\timeSynMd5Converter.h">
+      <Filter>addons\ofxMD5Convert\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\button.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\buttonFactory.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\doubleStateButton.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\flipTexRectButton.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\rectButton.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texRectButton.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texTextRectButton.h">
+      <Filter>addons\ofxMyButtons\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSender.h">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderFacory.h">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderMgr.h">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxSerialDataSender.h">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxTcpDataSender.h">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxUdpDataSender.h">
+      <Filter>addons\ofxMyDataSender\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyFramework\src\checkDigitCalculation.h">
+      <Filter>addons\ofxMyFramework\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofx8080LedScreen.h">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLEDmgr.h">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreen.h">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreenFactory.h">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLYDledScreen.h">
+      <Filter>addons\ofxMyLEDcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacMgr.h">
+      <Filter>addons\ofxMyMacControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacPowControl.h">
+      <Filter>addons\ofxMyMacControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon230PJcontrol.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJ2.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJcontrol.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannonComPJcontrol.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ1.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ2.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxDLPproject.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcomControl.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolBase.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolFactory.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxpjlinkPJcontrol.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPjMgr.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJnetControlBase.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxSonyNetProject.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxVivitekComProject.h">
+      <Filter>addons\ofxMyPJcontrol\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx2000seriesRelays.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55LongtengRelays.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55seriesRelays.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxHengYang2Relay.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxLightingRelays.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRealRelayBase.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayComponent.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayEqualComponent.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayFactory.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayLoopMgr.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysBase.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysMgr.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayThreadDecoration.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxVirtualRelayBase.h">
+      <Filter>addons\ofxMyRelay\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxDMX512controler.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxHuangControler.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealRecorderBase.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealTimeDMXcontroler.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderBase.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderFactory.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderThread.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecordMgr.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\waveLightControl.h">
+      <Filter>addons\ofxMyStageLightControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControl.h">
+      <Filter>addons\ofxMyVideoControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControlMgr.h">
+      <Filter>addons\ofxMyVideoControl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxNetwork.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxNetworkUtils.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPClient.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPManager.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPServer.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPSettings.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxUDPManager.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxUDPSettings.h">
+      <Filter>addons\ofxNetwork\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\ofxPptCmd.h">
+      <Filter>addons\ofxPublicCmd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\ofxScreenCmd.h">
+      <Filter>addons\ofxPublicCmd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\ofxSoundPlayControlCmd.h">
+      <Filter>addons\ofxPublicCmd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\videoControlCmd.h">
+      <Filter>addons\ofxPublicCmd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\btnsShowPage.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\downFlipSwitcher.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\flipSwitcher.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPage.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPageV2.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxImagePageBack.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxNullPageBack.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageBack.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageSwitchMgr.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxVideoPageBack.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\orderHandler.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageBase.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageControler.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageSwitchBase.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\rightFlipSwitcher.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\secondTipPage.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\spreadSwitcher.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\staticMgr.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\upFlipSwitcher.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\wordButton.h">
+      <Filter>addons\ofxSelfPage\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSerial\src\ofxSerial.h">
+      <Filter>addons\ofxSerial\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.h">
+      <Filter>addons\ofxTrueTypeFontUC\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
+      <Filter>addons\ofxXmlSettings\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxml.h">
+      <Filter>addons\ofxXmlSettings\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\controlClass.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\controlHandler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\myContants.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxHexCmdsMgr.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UImanager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>

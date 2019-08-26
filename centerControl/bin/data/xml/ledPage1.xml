@@ -1,0 +1,18 @@
+<title></title>
+<title1></title1>
+<backTex>pageImgs/ledBack1.png</backTex>
+
+<!-- 第一列 -->
+<!-- 印象乌海-LED -->
+<btn>
+    <x>766.000000000</x>
+    <y>284.000000000</y>
+    <type>4</type>
+    <name>开</name>
+</btn>
+<btn>
+    <x>990.000000000</x>
+    <y>284.000000000</y>
+    <type>5</type>
+    <name>关</name>
+</btn>

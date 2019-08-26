@@ -1,0 +1,13 @@
+<backTex>pageImgs/mainback.jpg</backTex>
+<btn>
+    <x>600.000000000</x>
+    <y>1000.000000000</y>
+    <type>0</type>
+    <name>管理模式</name>
+</btn>
+<btn>
+    <x>1178.000000000</x>
+    <y>1000.000000000</y>
+    <type>0</type>
+    <name>参观模式</name>
+</btn>

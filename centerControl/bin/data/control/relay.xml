@@ -1,0 +1,46 @@
+<!-- 0   -->
+<RELAY>
+	<type>9</type>
+	<COMPONENT>
+		<ADDRESS>0X03</ADDRESS>
+		<SIZE>12</SIZE>
+	</COMPONENT>
+</RELAY>
+<DATA_SENDER>
+	<!-- <SERIAL>
+		<COM>COM4</COM>
+		<N_BAUD>9600</N_BAUD>
+	</SERIAL> -->
+	<UDP>
+		<IP>192.168.1.191</IP>
+		<PORT>55555</PORT>
+	</UDP>
+	<!-- <TCP>
+		<IP>127.0.0.1</IP>
+		<PORT>6000</PORT>
+	</TCP> -->
+</DATA_SENDER>
+
+
+<!-- 1   -->
+<RELAY>
+	<type>9</type>
+	<COMPONENT>
+		<ADDRESS>0X04</ADDRESS>
+		<SIZE>12</SIZE>
+	</COMPONENT>
+</RELAY>
+<DATA_SENDER>
+	<!-- <SERIAL>
+		<COM>COM4</COM>
+		<N_BAUD>9600</N_BAUD>
+	</SERIAL> -->
+	<UDP>
+		<IP>192.168.1.192</IP>
+		<PORT>55555</PORT>
+	</UDP>
+	<!-- <TCP>
+		<IP>127.0.0.1</IP>
+		<PORT>6000</PORT>
+	</TCP> -->
+</DATA_SENDER>

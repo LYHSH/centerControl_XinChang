@@ -1,0 +1,101 @@
+<title></title>
+<title1></title1>
+<backTex>pageImgs/visitBack2.png</backTex>
+
+<!-- ‰ΩÀÆ√˜÷ÈLED -->
+<btn>
+    <x>469.000000000</x>
+    <y>400.000000000</y>
+    <type>0</type>
+    <name>≤•∑≈</name>
+</btn>
+<btn>
+    <x>769.000000000</x>
+    <y>400.000000000</y>
+    <type>0</type>
+    <name>‘›Õ£</name>
+</btn>
+<btn>
+    <x>1069.000000000</x>
+    <y>400.000000000</y>
+    <type>1</type>
+    <name>∏¥Œª</name>
+</btn>
+<btn>
+    <x>1369.000000000</x>
+    <y>400.000000000</y>
+    <type>0</type>
+    <name>“Ù¡ø+</name>
+</btn>
+<btn>
+    <x>1669.000000000</x>
+    <y>400.000000000</y>
+    <type>1</type>
+    <name>“Ù¡ø-</name>
+</btn>
+
+<!-- –ÚÃ¸±≥æ∞«ΩLED -->
+<btn>
+    <x>469.000000000</x>
+    <y>613.000000000</y>
+    <type>0</type>
+    <name>≤•∑≈</name>
+</btn>
+<btn>
+    <x>769.000000000</x>
+    <y>613.000000000</y>
+    <type>0</type>
+    <name>‘›Õ£</name>
+</btn>
+<btn>
+    <x>1069.000000000</x>
+    <y>613.000000000</y>
+    <type>1</type>
+    <name>∏¥Œª</name>
+</btn>
+<btn>
+    <x>1369.000000000</x>
+    <y>613.000000000</y>
+    <type>0</type>
+    <name>“Ù¡ø+</name>
+</btn>
+<btn>
+    <x>1669.000000000</x>
+    <y>613.000000000</y>
+    <type>1</type>
+    <name>“Ù¡ø-</name>
+</btn>
+
+
+<!-- –ÚÃ¸±≥æ∞«ΩLED -->
+<!-- <btn>
+    <x>469.000000000</x>
+    <y>826.000000000</y>
+    <type>0</type>
+    <name>≤•∑≈</name>
+</btn>
+<btn>
+    <x>769.000000000</x>
+    <y>826.000000000</y>
+    <type>0</type>
+    <name>‘›Õ£</name>
+</btn>
+<btn>
+    <x>1069.000000000</x>
+    <y>826.000000000</y>
+    <type>1</type>
+    <name>∏¥Œª</name>
+</btn>
+<btn>
+    <x>1369.000000000</x>
+    <y>826.000000000</y>
+    <type>0</type>
+    <name>“Ù¡ø+</name>
+</btn>
+<btn>
+    <x>1669.000000000</x>
+    <y>826.000000000</y>
+    <type>1</type>
+    <name>“Ù¡ø-</name>
+</btn>
+ -->

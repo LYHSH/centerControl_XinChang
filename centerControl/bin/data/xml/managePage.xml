@@ -1,0 +1,53 @@
+<title>ZHONG KONG XI TONG</title>
+<title1>中控系统</title1>
+<backTex>pageImgs/back.jpg</backTex>
+<btn>
+    <x>569.000000000</x>
+    <y>468.000000000</y>
+    <type>0</type>
+    <name>一键开馆</name>
+</btn>
+<btn>
+    <x>1216.000000000</x>
+    <y>468.000000000</y>
+    <type>1</type>
+    <name>一键闭馆</name>
+</btn>
+
+
+<btn>
+    <x>224.000000000</x>
+    <y>925.000000000</y>
+    <type>0</type>
+    <name>主机控制</name>
+</btn>
+<btn>
+    <x>674.000000000</x>
+    <y>925.000000000</y>
+    <type>0</type>
+    <name>投影控制</name>
+</btn>
+<btn>
+    <x>1112.000000000</x>
+    <y>-925.000000000</y>
+    <type>0</type>
+    <name>LED控制</name>
+</btn>
+<btn>
+    <x>1112.000000000</x>
+    <y>-925.000000000</y>
+    <type>0</type>
+    <name>拼接控制</name>
+</btn>
+<btn>
+    <x>1112.000000000</x>
+    <y>925.000000000</y>
+    <type>0</type>
+    <name>灯光控制</name>
+</btn>
+<btn>
+    <x>1562.000000000</x>
+    <y>925.000000000</y>
+    <type>0</type>
+    <name>参观控制</name>
+</btn>

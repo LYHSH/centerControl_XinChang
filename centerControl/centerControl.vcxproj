@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(WindowsTargetPlatformVersion)'==''">
+    <LatestTargetPlatformVersion>$([Microsoft.Build.Utilities.ToolLocationHelper]::GetLatestSDKTargetPlatformVersion('Windows', '10.0'))</LatestTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(WindowsTargetPlatformVersion)' == ''">$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>centerControl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../../../libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../../../libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../../../libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="../../../../../../libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\..\..\..\addons\ofxConstants\src;..\..\..\..\..\..\addons\ofxMD5Convert\src;..\..\..\..\..\..\addons\ofxMyButtons\src;..\..\..\..\..\..\addons\ofxMyDataSender\src;..\..\..\..\..\..\addons\ofxMyFramework\src;..\..\..\..\..\..\addons\ofxMyLEDcontrol\src;..\..\..\..\..\..\addons\ofxMyMacControl\src;..\..\..\..\..\..\addons\ofxMyPJcontrol\src;..\..\..\..\..\..\addons\ofxMyRelay\src;..\..\..\..\..\..\addons\ofxMyStageLightControl\src;..\..\..\..\..\..\addons\ofxMyVideoControl\src;..\..\..\..\..\..\addons\ofxNetwork\src;..\..\..\..\..\..\addons\ofxPublicCmd\src;..\..\..\..\..\..\addons\ofxSelfPage\src;..\..\..\..\..\..\addons\ofxSerial\src;..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src;..\..\..\..\..\..\addons\ofxXmlSettings\libs;..\..\..\..\..\..\addons\ofxXmlSettings\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\..\..\..\addons\ofxConstants\src;..\..\..\..\..\..\addons\ofxMD5Convert\src;..\..\..\..\..\..\addons\ofxMyButtons\src;..\..\..\..\..\..\addons\ofxMyDataSender\src;..\..\..\..\..\..\addons\ofxMyFramework\src;..\..\..\..\..\..\addons\ofxMyLEDcontrol\src;..\..\..\..\..\..\addons\ofxMyMacControl\src;..\..\..\..\..\..\addons\ofxMyPJcontrol\src;..\..\..\..\..\..\addons\ofxMyRelay\src;..\..\..\..\..\..\addons\ofxMyStageLightControl\src;..\..\..\..\..\..\addons\ofxMyVideoControl\src;..\..\..\..\..\..\addons\ofxNetwork\src;..\..\..\..\..\..\addons\ofxPublicCmd\src;..\..\..\..\..\..\addons\ofxSelfPage\src;..\..\..\..\..\..\addons\ofxSerial\src;..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src;..\..\..\..\..\..\addons\ofxXmlSettings\libs;..\..\..\..\..\..\addons\ofxXmlSettings\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\..\..\..\addons\ofxConstants\src;..\..\..\..\..\..\addons\ofxMD5Convert\src;..\..\..\..\..\..\addons\ofxMyButtons\src;..\..\..\..\..\..\addons\ofxMyDataSender\src;..\..\..\..\..\..\addons\ofxMyFramework\src;..\..\..\..\..\..\addons\ofxMyLEDcontrol\src;..\..\..\..\..\..\addons\ofxMyMacControl\src;..\..\..\..\..\..\addons\ofxMyPJcontrol\src;..\..\..\..\..\..\addons\ofxMyRelay\src;..\..\..\..\..\..\addons\ofxMyStageLightControl\src;..\..\..\..\..\..\addons\ofxMyVideoControl\src;..\..\..\..\..\..\addons\ofxNetwork\src;..\..\..\..\..\..\addons\ofxPublicCmd\src;..\..\..\..\..\..\addons\ofxSelfPage\src;..\..\..\..\..\..\addons\ofxSerial\src;..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src;..\..\..\..\..\..\addons\ofxXmlSettings\libs;..\..\..\..\..\..\addons\ofxXmlSettings\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\..\..\..\addons\ofxConstants\src;..\..\..\..\..\..\addons\ofxMD5Convert\src;..\..\..\..\..\..\addons\ofxMyButtons\src;..\..\..\..\..\..\addons\ofxMyDataSender\src;..\..\..\..\..\..\addons\ofxMyFramework\src;..\..\..\..\..\..\addons\ofxMyLEDcontrol\src;..\..\..\..\..\..\addons\ofxMyMacControl\src;..\..\..\..\..\..\addons\ofxMyPJcontrol\src;..\..\..\..\..\..\addons\ofxMyRelay\src;..\..\..\..\..\..\addons\ofxMyStageLightControl\src;..\..\..\..\..\..\addons\ofxMyVideoControl\src;..\..\..\..\..\..\addons\ofxNetwork\src;..\..\..\..\..\..\addons\ofxPublicCmd\src;..\..\..\..\..\..\addons\ofxSelfPage\src;..\..\..\..\..\..\addons\ofxSerial\src;..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src;..\..\..\..\..\..\addons\ofxXmlSettings\libs;..\..\..\..\..\..\addons\ofxXmlSettings\src</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\controlClass.cpp" />
+    <ClCompile Include="src\controlHandler.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\manager.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxConstants\src\ofxMyConstants.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\cmdConverter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\md5Converter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\nullConverter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\timeSynMd5Converter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\button.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\buttonFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\doubleStateButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\flipTexRectButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\rectButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texRectButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texTextRectButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSender.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderFacory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxSerialDataSender.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxTcpDataSender.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxUdpDataSender.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyFramework\src\checkDigitCalculation.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofx8080LedScreen.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLEDmgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreen.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreenFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLYDledScreen.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacPowControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon230PJcontrol.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJ2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJcontrol.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannonComPJcontrol.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ1.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxDLPproject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcomControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxpjlinkPJcontrol.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPjMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJnetControlBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxSonyNetProject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxVivitekComProject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx2000seriesRelays.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55LongtengRelays.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55seriesRelays.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxHengYang2Relay.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxLightingRelays.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRealRelayBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayComponent.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayEqualComponent.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayLoopMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayThreadDecoration.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxVirtualRelayBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxDMX512controler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxHuangControler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealRecorderBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealTimeDMXcontroler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderThread.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecordMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\waveLightControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControlMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxNetworkUtils.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPClient.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxUDPManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\btnsShowPage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\downFlipSwitcher.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\flipSwitcher.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPageV2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxImagePageBack.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxNullPageBack.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageBack.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageSwitchMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxVideoPageBack.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\orderHandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageControler.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageSwitchBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\rightFlipSwitcher.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\secondTipPage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\spreadSwitcher.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\staticMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\upFlipSwitcher.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxSelfPage\src\wordButton.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="src\ofxHexCmdsMgr.cpp" />
+    <ClCompile Include="src\UImanager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\controlClass.h" />
+    <ClInclude Include="src\controlHandler.h" />
+    <ClInclude Include="src\manager.h" />
+    <ClInclude Include="src\myContants.h" />
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxConstants\src\ofxMyConstants.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\cmdConverter.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\md5.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\md5Converter.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\nullConverter.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMD5Convert\src\timeSynMd5Converter.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\button.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\buttonFactory.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\doubleStateButton.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\flipTexRectButton.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\rectButton.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texRectButton.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyButtons\src\texTextRectButton.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSender.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderFacory.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxDataSenderMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxSerialDataSender.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxTcpDataSender.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyDataSender\src\ofxUdpDataSender.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyFramework\src\checkDigitCalculation.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofx8080LedScreen.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLEDmgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreen.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLedScreenFactory.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyLEDcontrol\src\ofxLYDledScreen.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyMacControl\src\ofxMacPowControl.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon230PJcontrol.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJ2.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannon33336PJcontrol.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxCannonComPJcontrol.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ1.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxChangShaPJ2.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxDLPproject.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcomControl.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJcontrolFactory.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxpjlinkPJcontrol.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPjMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxPJnetControlBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxSonyNetProject.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyPJcontrol\src\ofxVivitekComProject.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx2000seriesRelays.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55LongtengRelays.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofx55seriesRelays.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxHengYang2Relay.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxLightingRelays.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRealRelayBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayComponent.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayEqualComponent.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayFactory.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayLoopMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelaysMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxRelayThreadDecoration.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyRelay\src\ofxVirtualRelayBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxDMX512controler.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxHuangControler.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealRecorderBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRealTimeDMXcontroler.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderFactory.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecorderThread.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\ofxRecordMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyStageLightControl\src\waveLightControl.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControl.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxMyVideoControl\src\ofxRemoteVideoControlMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxNetwork.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxNetworkUtils.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPClient.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxTCPSettings.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxUDPManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxNetwork\src\ofxUDPSettings.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\ofxPptCmd.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\ofxScreenCmd.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\ofxSoundPlayControlCmd.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxPublicCmd\src\videoControlCmd.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\btnsShowPage.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\downFlipSwitcher.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\flipSwitcher.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPage.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxBtnPageV2.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxImagePageBack.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxNullPageBack.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageBack.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxPageSwitchMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\ofxVideoPageBack.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\orderHandler.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageControler.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\pageSwitchBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\rightFlipSwitcher.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\secondTipPage.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\spreadSwitcher.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\staticMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\upFlipSwitcher.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSelfPage\src\wordButton.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxSerial\src\ofxSerial.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxTrueTypeFontUC\src\ofxTrueTypeFontUC.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="..\..\..\..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="src\ofxHexCmdsMgr.h" />
+    <ClInclude Include="src\UImanager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,48 @@
+<title></title>
+<title1></title1>
+<backTex>pageImgs/visitBack3.png</backTex>
+
+<btn>
+    <x>719.000000000</x>
+    <y>600.000000000</y>
+    <type>0</type>
+    <name>视频7</name>
+</btn>
+<btn>
+    <x>1419.000000000</x>
+    <y>600.000000000</y>
+    <type>0</type>
+    <name>视频8</name>
+</btn>
+
+
+<btn>
+    <x>469.000000000</x>
+    <y>1000.000000000</y>
+    <type>0</type>
+    <name>播放</name>
+</btn>
+<btn>
+    <x>769.000000000</x>
+    <y>1000.000000000</y>
+    <type>0</type>
+    <name>暂停</name>
+</btn>
+<btn>
+    <x>1069.000000000</x>
+    <y>1000.000000000</y>
+    <type>1</type>
+    <name>复位</name>
+</btn>
+<btn>
+    <x>1369.000000000</x>
+    <y>1000.000000000</y>
+    <type>0</type>
+    <name>音量+</name>
+</btn>
+<btn>
+    <x>1669.000000000</x>
+    <y>1000.000000000</y>
+    <type>1</type>
+    <name>音量-</name>
+</btn>

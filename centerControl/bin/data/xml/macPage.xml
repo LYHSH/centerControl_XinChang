@@ -1,0 +1,35 @@
+<title>ZHU JI KONG ZHI</title>
+<title1>主机控制</title1>
+<backTex>pageImgs/background.jpg</backTex>
+<btn>
+    <x>42.000000000</x>
+    <y>1332.000000000</y>
+    <type>0</type>
+    <name>返 回</name>
+</btn>
+
+<btn>
+    <x>42.000000000</x>
+    <y>472.000000000</y>
+    <type>0</type>
+    <name>主机全开</name>
+</btn>
+<btn>
+    <x>42.000000000</x>
+    <y>592.000000000</y>
+    <type>1</type>
+    <name>主机全关</name>
+</btn>
+
+<btn>
+    <x>42.000000000</x>
+    <y>792.000000000</y>
+    <type>0</type>
+    <name>第一页</name>
+</btn>
+<btn>
+    <x>42.000000000</x>
+    <y>912.000000000</y>
+    <type>0</type>
+    <name>第二页</name>
+</btn>

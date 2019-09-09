@@ -274,7 +274,7 @@ void controlClass::getMessage(int msg){
 				if (VISIT_CONTROL_PAGE_1_GONG_YE_PLAY == msg)
 				{
 					static int port = 14666;
-					static string cmd = "CMD_GOTO_LOOP";
+					static string cmd = "CMD_GOTO_SWITCH";
 					vector<string> ips = videoMgr.getIPs(0);
 					for (int i = 0; i < ips.size(); i++)
 					{
@@ -284,7 +284,7 @@ void controlClass::getMessage(int msg){
 				else if (VISIT_CONTROL_PAGE_1_GONG_YE_STOP == msg)
 				{
 					static int port = 14666;
-					static string cmd = "CMD_GOTO_SWITCH";
+					static string cmd = "CMD_GOTO_LOOP";
 					vector<string> ips = videoMgr.getIPs(0);
 					for (int i = 0; i < ips.size(); i++)
 					{

@@ -291,10 +291,16 @@ void controlClass::getMessage(int msg){
 						sendUdpCmd(ips[i], port, cmd);
 					}
 				}
+				else if (msg >= VISIT_CONTROL_PAGE_1_XU_TING_MOVIE_1 && msg <= VISIT_CONTROL_PAGE_1_XU_TING_MOVIE_2)
+				{
+					int movieIndex = msg - VISIT_CONTROL_PAGE_1_XU_TING_MOVIE_1;
+
+					videoMgr.play(2, movieIndex);				//序厅放在第三组
+				}
 				else
 				{
 					int index = 1;
-					int temp = msg - VISIT_CONTROL_PAGE_1_GONG_YE_STOP - 1;
+					int temp = msg - VISIT_CONTROL_PAGE_1_XU_TING_MOVIE_2 - 1;
 
 					int cmdType = temp % 5;
 					index += temp / 5;
